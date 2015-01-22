@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>381 Project Test</title>
+
+	<link rel="stylesheet" href="css/pure-min.css">
+
+</head>
+
+<body>
+	<h1>Test</h1>
+
+	<p>
+      <strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. 
+    </p>
+
+    <nav>
+      <a href="#kittens">To the kittens</a>
+      <a href="#comments">But puppies are cuter</a>
+    </nav>
+
+
+
+    <!-- Sections help to define the structure of our site, which is ultimately, up to us -->
+    <section id="kittens">
+      <h2>
+        <!-- Here we are creating a link in our header-tag -->
+        <a href="http://placekitten.com" target="_blank">Kittens are da cutest!</a>
+      </h2>
+
+      <!-- Figure helps associate image with caption -->
+      <figure>
+
+        <!-- Because images don't wrap other content (they are simply placed) we don't have to close an image tag -->
+        <img src="img/kitten.jpg" height="480" width="600" alt="A kitten">
+        <figcaption>It's a bundle of cute, cuddly, death!</figcaption>
+
+      </figure>
+
+      <ol>
+        <li><em>First reason why kittens are death</em></li>
+        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+        <li>Aliquam tincidunt mauris eu risus.</li>
+      </ol>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
+    </section>
+
+
+    <section id="comments">
+      <h2>
+        <!-- The 'target' attribute can specify we want to open this in a new window -->
+        <a href="http://placedog.com">But puppies are cuter!</a>
+      </h2>
+
+      <p>Feel free to submit your comments on why puppies are cuter:</p>
+
+      <!-- All valid forms must use a 'method' (for submitting the form), and an 'action' (which submits the form) -->
+      <form method="post" action="#">
+
+        <div class="input-wrapper">
+
+          <!-- Labels are associated with 'ids', NOT with 'name' attributes --> 
+          <label for="form-name">Name:</label>
+          <!-- Input elements should have a 'type' defined to help with processing -->
+          <input type="text" id="form-name" placeholder="Jane Doe">
+        </div>
+
+        <div class="input-wrapper">
+          <label for="form-subject">Subject:</label>
+          <input type="text" id="form-subject" placeholder="A title for your comment">
+        </div>
+
+        <div class="input-wrapper">   
+          <label for="form-comment">Comment:</label>
+          <!-- Textareas allow for multi-line text input instead of a single line -->
+          <textarea id="form-comment" placeholder="Please place comment here"></textarea>
+        </div>
+
+         <input type="submit" value="Submit your comment">
+
+      </form>
+
+    </section>
+
+
+
+  </body>
+</html>
